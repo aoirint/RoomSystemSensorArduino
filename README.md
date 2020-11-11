@@ -39,12 +39,12 @@ arduino-cli lib install ArduinoJson
 
 ```json
 {
-  "light": int,
-  "temperature": int,
-  "temperatureCelsius": float,
-  "nowButtonIsPressed", bool,
-  "waitButtonIsPressed", bool,
-  "doorIsOpen", bool
+  "light": 0,
+  "temperature": 175,
+  "temperatureCelsius": 14.72,
+  "nowButtonIsPressed": false,
+  "waitButtonIsPressed": false,
+  "doorIsOpen": false
 }
 ```
 

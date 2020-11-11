@@ -34,6 +34,21 @@ arduino-cli lib install ArduinoJson
 電極を取り付けたドアが閉じているか、開いているかを検知します。
 
 
+## シリアル通信
+改行で区切られたJSONを送り続けます。
+
+```json
+{
+  "light": int,
+  "temperature": int,
+  "temperatureCelsius": float,
+  "nowButtonIsPressed", bool,
+  "waitButtonIsPressed", bool,
+  "doorIsOpen", bool
+}
+```
+
+
 ## センサの接続
 デジタルピンの読み取りはArduino内部でプルアップ抵抗をはさむようにしているので、
 ONのときにGNDと接続、OFFのときは未接続（読み取りは`HIGH`）になるようにしてください。

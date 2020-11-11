@@ -36,6 +36,7 @@ arduino-cli lib install ArduinoJson
 
 ## シリアル通信
 改行で区切られたJSONを送り続けます。
+Baudrateは`115200`です。
 
 ```json
 {

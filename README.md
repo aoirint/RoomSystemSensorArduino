@@ -5,6 +5,11 @@
 - 温度センサ LM61CIZ
 - 照度センサ NJL7202L-F3
 
+## Dependencies
+```bash
+arduino-cli lib install ArduinoJson
+```
+
 ## 機能
 
 基本的に、
@@ -35,9 +40,25 @@ ONのときにGNDと接続、OFFのときは未接続（読み取りは`HIGH`）
 
 ### 照度センサ（Light）
 `A0`番ピンに接続してください。
+NJL7202L-F3の長い端子を5V、短い端子を`A0`と抵抗200kΩ（茶黒赤）でプルダウン。
+
+```
+[5V]-[Long]NJL7202L-F3[Short]-T--[PIN A0]
+                              L-[200kΩ]--[GND]
+```
 
 ### 温度センサ（Temperature）
 `A1`番ピンに接続してください。
+
+```
+(top view)
+
+            (rounded)
+           ___--^--___
+[5V]-[Left]Temp Sensor[Right]-[GND]
+             [Center]
+                 L--[PIN A1]
+```
 
 ### 今行きますボタン（Now Button）
 `3`番ピンに接続してください。

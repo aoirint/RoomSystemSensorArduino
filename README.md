@@ -17,6 +17,8 @@ arduino-cli lib install ArduinoJson
 [aoirint/RoomSystemBotClient](https://github.com/aoirint/RoomSystemBotClient)
 と組み合わせて使うことを想定しています。
 
+読み取りクライアントは[aoirint/RoomSystemSensorConnector](https://github.com/aoirint/RoomSystemSensorConnector)を想定しています。
+
 
 ### 照度センサ（Light）
 部屋の明るさを測定します。

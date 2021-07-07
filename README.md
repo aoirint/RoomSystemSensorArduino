@@ -3,7 +3,7 @@
 ## 想定環境
 - Arduino UNO
 - 温度センサ LM61CIZ
-- 照度センサ NJL7202L-F3
+- 照度センサ NJL7302L-F3
 
 ## Dependencies
 ```bash
